@@ -18,7 +18,7 @@ def thumnailize_image(infile, outfile):
     area = (0, 0, min_size, min_size)
     img = img.crop(area)
     size = (128, 128)
-    img.thumbnail(size, Image.Resampling.BICUBIC)
+    img.thumbnail(size)
 
     img.paste(app_icon, (92, 92), app_icon)
 
